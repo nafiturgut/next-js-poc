@@ -1,27 +1,34 @@
-html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+  background-color: #303030;
 }
-
-* {
-  box-sizing: border-box;
+#container {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 10px;
+width: 1800px;
+height: 800px;
+background-color: #fff;
 }
+/* .recharts-tooltip-item-list{
+columns: 2;
+-webkit-columns: 2 !important;
+-moz-columns: 2;
+} */
 
-a {
-  color: #0070f3;
-  text-decoration: none;
+.tooltip-columns-1 .recharts-default-tooltip ul {
+columns: 1;
+-webkit-columns: 1;
+-moz-columns: 1;
 }
-
-a:hover {
-  text-decoration: underline;
+.tooltip-columns-2 .recharts-default-tooltip ul {
+columns: 2;
+-webkit-columns: 2;
+-moz-columns: 2;
 }
-
-img {
-  max-width: 100%;
-  display: block;
+.tooltip-columns-3 .recharts-default-tooltip ul {
+columns: 3;
+-webkit-columns: 3;
+-moz-columns: 3;
 }
